@@ -1,0 +1,99 @@
+site_name: pixelchrome
+site_description: a different view...
+site_url: https://pixelchrome.org/area51
+theme:
+  name: material
+  palette:
+    - scheme: slate
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to light mode
+      primary: black
+      accent: pink
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+      primary: indigo
+      accent: orange
+  features:
+    - navigation.tabs
+    #    - navigation.sections
+    - navigation.top
+    - navigation.indexes
+    - navigation.instant
+    - navigation.instant.progress
+    - search.suggest
+    - search.highlight
+    - content.action.edit
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+    - toc.follow
+    #- toc.integrate
+  icon:
+    repo: fontawesome/brands/gitlab
+
+plugins:
+  - blog:
+      enabled: true
+      blog_dir: .
+      blog_toc: false
+      post_url_format: "{slug}"
+      post_readtime: true
+      authors_file: "{blog}/.authors.yml"
+      archive: true
+      archive_date_format: MM/yyyy
+      archive_url_date_format: MM/yyyy
+      archive_toc: true
+      categories: true
+      pagination: true
+      pagination_per_page: 5
+  - rss:
+      match_path: "posts/.*"
+      pretty_print: true
+      date_from_meta:
+        as_creation: date.created
+        as_update: date.updated
+  #- social
+  - search
+  - git-revision-date-localized:
+      fallback_to_build_date: true
+      enable_creation_date: true
+  - tags
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - footnotes
+  - md_in_html
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.mark
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
+extra:
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/pixelchrome
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/hdumdey/
+
+copyright: |
+  &copy; 2025 <a href="https://pixelchrome.org/"  target="_blank" rel="noopener">Harald Dumdey</a>
