@@ -34,3 +34,4 @@ backrefs~=5.7.post1
 requests~=2.26
 mkdocs-git-revision-date-localized-plugin
 mkdocs-rss-plugin
+mkdocs-git-committers-plugin-2

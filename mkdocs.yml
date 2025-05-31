@@ -1,6 +1,9 @@
 site_name: pixelchrome
 site_description: a different view...
-site_url: https://pixelchrome.org/area51
+site_url: https://pixelchrome.org/blog
+repo_url: https://github.com/pixelchrome/blog/
+repo_name: pixelchrome/blog
+edit_uri: edit/main/docs/
 theme:
   name: material
   palette:
@@ -25,14 +28,14 @@ theme:
     - navigation.instant.progress
     - search.suggest
     - search.highlight
-    - content.action.edit
+    - content.action.view
     - content.tabs.link
     - content.code.annotation
     - content.code.copy
     - toc.follow
     #- toc.integrate
   icon:
-    repo: fontawesome/brands/gitlab
+    #repo: fontawesome/brands/gitlab
 
 plugins:
   - blog:
@@ -61,6 +64,9 @@ plugins:
       fallback_to_build_date: true
       enable_creation_date: true
   - tags
+  #- git-committers:
+  #repository: pixelchrome/blog
+  #branch: main
 
 markdown_extensions:
   - admonition

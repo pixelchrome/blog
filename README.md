@@ -15,8 +15,8 @@ source venv/bin/activate
 ### Install Material for MkDocs
 
 ```sh
-pip install mkdocs-material
-pip install -r requirements.txt
+pip3 install mkdocs-material
+pip3 install -r requirements.txt
 ```
 
 ## Create a new site
