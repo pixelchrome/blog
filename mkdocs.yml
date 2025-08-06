@@ -96,6 +96,10 @@ markdown_extensions:
 
 extra:
   social:
+    - icon: fontawesome/solid/address-card
+      link: https://pixelchrome.org/about/
+    - icon: fontawesome/solid/square-rss
+      link: https://pixelchrome.org/blog/feed_rss_created.xml
     - icon: fontawesome/brands/github-alt
       link: https://github.com/pixelchrome
     - icon: fontawesome/brands/linkedin
