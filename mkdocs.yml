@@ -33,7 +33,8 @@ theme:
     - content.code.annotation
     - content.code.copy
     - toc.follow
-    #- toc.integrate
+  logo: assets/logo.svg
+  favicon: assets/favicon.ico
   icon:
     #repo: fontawesome/brands/gitlab
 
